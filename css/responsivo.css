@@ -1,0 +1,116 @@
+@media(max-width: 1000px){
+
+    #header .container .logo a{
+        font-size: 25px;
+    }
+
+    .navSumir{
+        
+    }
+
+    .navAparecer{
+       
+    }
+
+    .sobre .imagem img{
+        padding-top: 20px;
+    }
+
+    .sobre .titulo{
+        font-size: 40px;
+    }
+
+    .conhecimentos .item img{
+        filter: none;
+    }
+
+    .conhecimentosTitulo{
+        font-size: 25px;
+    }
+
+    .conhecimentos .item:hover .tituloItem{
+        border: none;
+    }
+
+    .conhecimentos .conhecimentosInvisivel{
+        display: none;
+    }
+
+    .conhecimentos .item .conhecimentosSobre{
+        display: block;
+    }
+
+    .projetos .mostrar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projetos .mostrar img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .projetos .mostrar img:hover{
+        filter: none;
+    }
+
+    .projetos .mostrar .cliqueGit{
+       padding-bottom: 20px;
+    }
+    
+
+    .botaoCurriculo{
+        text-align: center;
+    }
+
+    .proj1{
+        display: none;
+    }
+
+    .proj2{
+        display: block;
+    }
+    
+
+    .text1{
+        font-size: 35px;
+    }
+    
+    .text2{
+        font-size: 45px;
+    }
+    
+    .text3{
+        font-size: 35px;
+    }
+
+    .bord{
+        border-left: none;
+        border-right: none;
+    }
+
+    .repositorios .item .repositorioLink{
+        position: static;
+    }
+
+}
+
+@media(max-width: 765px){
+    .bord{
+        border-top: 1px solid rgb(202, 202, 202);
+        border-bottom: 1px solid rgb(202, 202, 202);
+    }
+}
+
+@media(min-width: 768px) and (max-width:1000px){
+    .sobre .imagem img{
+        width: 50%;
+    }
+}
+
+@media(min-width: 1000px){
+    .opcoesMobile{
+        display: none   ;
+    }
+}
+

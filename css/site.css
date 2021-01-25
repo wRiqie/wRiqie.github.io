@@ -1,0 +1,653 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*MOBILE AREA*/
+.page-wrap:before{
+    transition: .3s all ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+ 
+.off-view .page-wrap{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+ 
+.off-view .page-wrap:before{
+    opacity: 0.5;
+    visibility: visible;
+}
+ 
+.mobile-view{
+    width:100vw;
+    position: fixed;
+    right: 0;
+    z-index: 2000;
+    padding-top: 20px;
+    background: white;
+    height: calc(100vh);
+    transform: translateX(110%);
+    box-shadow: -10px 0 20px -10px rgba(0,0,0,0.1);
+    transition: .3s all ease-in-out;
+}
+ 
+.off-view .mobile-view{
+    transform: translateX(0%);
+}
+.mobile-view .mobile-view-header{
+    width: 100%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ 
+.mobile-view .mobile-view-header .mobile-view-close{
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+ 
+ 
+.mobile-view .mobile-view-header .mobile-view-close i{
+    font-size: 30px;
+    display: inline-block;
+    padding-right: 10px;
+    line-height: 1;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+ 
+.mobile-view .mobile-view-body{
+    overflow: scroll;
+    position: relative;
+    padding: 20px;
+    height: calc(100vh - 52px);
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+ 
+.mobile-view .clone-view{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+ 
+.mobile-view .clone-view a{
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+/*MOBILE AREA*/
+
+#header{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    transition: 0.6s;
+}
+
+header.sticky {
+    padding: 30px 0;
+    background: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.centro{
+    text-align: center;
+}
+
+#header .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .container .logo a span{
+    color: rgb(29, 151, 233);
+}
+
+#header .container .logo a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.navigation ul{
+    list-style: none;
+}
+
+.navigation ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.navAparecer{
+    z-index: 5000;
+    font-size: 25px;
+    color: white;
+}
+
+.fundo{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/background.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+.fundo::before{
+    content: "";
+    background: rgba(26, 34, 61, 0.836);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.fundo .max{
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    right: 0;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.text1{
+    color: white;
+    font-size: 40px;
+}
+
+.text2{
+    color: white;
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.text3{
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.text3 .azul{
+    color:rgb(29, 151, 233);
+}
+
+.text3 .nick{
+    font-weight: bold;
+}
+
+.sobre{
+    display: flex;
+    align-items: center;
+    padding: 150px 0;
+}
+
+.sobre .titulo{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(23, 128, 199);
+}
+
+.sobre .corpoDoTexto{
+    padding-top: 20px;
+    text-align: justify;
+
+    font-size: 20px;
+}
+
+.sobre .imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre .imagem img{
+    width: 70%;
+
+    border-radius: 5px;
+}
+
+.botaoCurriculo{
+    padding-top: 20px;
+}
+
+.botaoCurriculo a button{
+    padding: 15px;
+
+    background: rgb(23, 128, 199);
+    border: 2px solid rgb(23, 128, 199);
+    outline: none;
+    color: white;
+    font-weight: 600;
+
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.botaoCurriculo a button:hover{
+    background: none;
+    color: rgb(23, 128, 199);
+    border: 2px solid rgb(23, 128, 199);
+}
+
+.conhecimentos{
+    padding: 0 0 150px 0;
+    background-color: rgb(15, 117, 185);
+    color: black;
+    
+}
+
+.conhecimentosTitulo{
+    color: white;
+    padding: 80px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.conhecimentos .item{
+    padding:40px;
+    background-color: white;
+    border: 3px solid rgb(15, 117, 185);
+    border-radius: 5px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conhecimentos .item img{
+    width: 50%;
+    filter: grayscale(1);
+    transition: 0.8s;
+}
+
+.conhecimentos .item:hover .tituloItem{
+   border-bottom: 1px solid rgb(29, 151, 233);
+}
+
+.conhecimentos .item:hover img{
+    filter: none;
+}
+
+.conhecimentos .item .tituloItem{
+   font-size: 18px;
+   font-weight: 600;
+   padding-top: 5px;
+   transition: 0.8s;
+}
+
+.conhecimentos .item .conhecimentosSobre{
+    display: none;
+    text-align: center;
+
+    font-style: italic;
+}
+
+.conhecimentos .item:hover .conhecimentosSobre{
+    display: block;
+}
+
+
+.projetos{
+    padding: 0 0 150px 0;
+}
+
+.projetos .tituloProjetos{
+    padding: 150px 0 80px 0;
+    text-align: center;
+
+    color: rgb(23, 128, 199);
+
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.projetos .mostrar{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos .mostrar img{
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.projetos .mostrar img:hover{
+    filter: grayscale(60%);
+}
+
+.projetos .mostrar .nomeProjeto{
+    font-size: 18px;
+    font-weight: 700;
+
+    padding-top: 6px;
+}
+
+.proj2{
+    display: none;
+}
+
+.cliqueGit{
+    font-weight: 600;
+}
+
+.botaoProjeto a button{
+    padding: 10px;
+    margin-top: 3px;
+
+    background: none;
+    border: 2px solid rgb(23, 128, 199);
+    outline: none;
+    color: rgb(23, 128, 199);
+    font-weight: 600;
+
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.iconeProjeto{
+    padding-left: 5px;
+}
+
+.cursos{
+    padding: 0 0 150px 0;
+
+    background-color: rgb(15, 117, 185);
+}
+
+.cursos .cursosTitulo{
+    padding: 150px 0 80px 0;
+
+    text-align: center;
+    font-size: 38px;
+
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.cursos .item{
+    padding: 50px;
+    background-color: white;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.cursos .item:hover{
+
+}
+
+.cursos .cursosIcone{
+    font-size: 60px;
+
+    color: rgb(15, 117, 185);
+}
+
+.cursos .cursosNome{
+    text-align:left;
+    padding-top: 15px;
+
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+
+    font-size: 18px;
+}
+
+.cursos .cursosFonte{
+    text-align: left;
+
+    color: rgb(119, 119, 119);
+}
+
+.repositorios{
+    padding: 0 0 150px 0;
+}
+
+.repositorios .repositoriosTitulo{
+    text-align: center;
+    padding: 150px 0 80px 0;
+
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.repositorios .item{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    height: 250px;
+}
+
+.repositorios .item .repositorioNome{
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+.repositorios .item .repositorioSobre{
+    color: rgb(233, 233, 233);
+}
+
+.primeiroItem{
+    background-image: url(../img/pokemon.png);
+    background-size: cover;
+}
+
+.segundoItem{
+    background-image: url(../img/games.jpg);
+    background-size: cover;
+}
+
+.terceiroItem{
+    background-image: url(../img/lofi.png);
+    background-size: cover;
+    
+}
+
+.quartoItem{
+    background-image: url(../img/lofi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quintoItem{
+    background-image: url(../img/fdevs.jpg);
+    background-size: cover;
+}
+
+.sextoItem{
+    background-image: url(../img/myheal.png);
+    background-size: cover;
+}
+
+.repositorios .item .repositorioLink{
+    text-decoration: none;
+
+}
+
+.repositorios .item .repositorioLink button{
+    padding: 5px;
+
+    background: none;
+    border: 2px solid rgb(23, 128, 199);
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.repositorios .item .repositorioLink button:hover{
+    transform: scale(1.05);
+}
+
+.contatos{
+    padding: 0 0 75px 0;
+    text-align: center;
+}
+
+.itemContato{
+    padding-bottom: 25px;
+}
+
+.contatos .contatosTitulo{
+    padding: 120px 0 70px 0;
+
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+
+    border-top: 2px solid rgb(201, 201, 201);
+}
+
+.contatos .icon{
+    color: rgb(105, 105, 105);
+
+    font-weight: 100;
+
+    font-size: 52px;
+    padding: 10px 0;
+}
+
+.contatos .title{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+
+    padding: 5px 0;
+}
+
+.contatos .subtitle{
+    color: rgb(143, 143, 143);
+
+    font-weight: 500;
+
+    padding-bottom: 10px;
+}
+
+.contatos .contatoReal{
+    font-weight: bold;
+}
+
+.contatos .whatsButton button{
+    padding: 5px 10px;
+
+    color: white;
+    background-color: #34af23;
+
+    font-weight: 500;
+
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.contatos .linkButton button{
+    padding: 5px 10px;
+
+    color: white;
+    background-color: #0976b4;
+
+    font-weight: 500;
+
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.bord{
+    border-left: 1px solid rgb(202, 202, 202);
+    border-right: 1px solid rgb(202, 202, 202);
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+footer .rodape .textFooter span{
+    color: rgb(29, 151, 233);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+footer .rodape .textFooter{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
