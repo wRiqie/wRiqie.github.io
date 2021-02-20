@@ -24,7 +24,6 @@
 
 <body>
 
-    <!--================HEADER================-->
     <div class="page-wrap">
 
         <div class="mobile-view">
@@ -74,8 +73,6 @@
         </header>
 
     </div>
-    <!--================HEADER================-->
-
 
     <section id="inicio" class="fundo">
         <div class="max">
@@ -85,7 +82,6 @@
         </div>
     </section>
 
-    <!--================SOBRE===============-->
     <section id="sobre" class="sobre">
         <div class="container">
             <div class="row">
@@ -106,61 +102,61 @@
             </div>
         </div>
     </section>
-    <!--================SOBRE================-->
 
-
-    <!--================CONHECIMENTOS================-->
     <section id="conhecimentos" class="conhecimentos">
-        <div class="conhecimentosTitulo wow fadeInDown"><span>Conhecimentos</span></div>
+        <div class="conhecimentosTitulo"><span>Conhecimentos</span></div>
         <div class="container">
-            <div class="row wow fadeInDown">
+            <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4 item">
                     <img src="img/logos/angular-logo.png" alt="">
                     <div class="tituloItem">Angular</div>
-                    <div class="conhecimentosSobre">Utilizado algumas vezes, inclusive em um projeto de crud</div>
+                    <div id="conhecimento" class="conhecimentosSobre">Utilizado algumas vezes, inclusive em um projeto de crud</div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 item">
                     <img src="img/logos/asp-logo.png" alt="">
                     <div class="tituloItem">Asp Net Core</div>
-                    <div class="conhecimentosSobre">Conhecimentos com base nas aulas da etec</div>
+                    <div id="conhecimento" class="conhecimentosSobre">Conhecimentos com base nas aulas da etec</div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 item">
                     <img src="img/logos/css-logo.png" alt="">
                     <div class="tituloItem">Css</div>
-                    <div class="conhecimentosSobre">Utilizado muitas vezes tanto em projetos como nas aulas da etec
+                    <div id="conhecimento" class="conhecimentosSobre">Utilizado muitas vezes tanto em projetos como nas aulas da etec
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 item">
                     <img src="img/logos/html-logo.png" alt="">
                     <div class="tituloItem">Html</div>
-                    <div class="conhecimentosSobre">Utilizado muitas vezes tanto em projetos como nas aulas da etec
+                    <div id="conhecimento" class="conhecimentosSobre">Utilizado muitas vezes tanto em projetos como nas aulas da etec
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 item">
                     <img src="img/logos/ionic-logo.png" alt="">
                     <div class="tituloItem">Ionic</div>
-                    <div class="conhecimentosSobre">Utilizado em aulas da etec, inclusive no TCC</div>
+                    <div id="conhecimento" class="conhecimentosSobre">Utilizado em aulas da etec, inclusive no TCC</div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 item">
                     <img src="img/logos/js-logo.png" alt="">
                     <div class="tituloItem">Javascript</div>
-                    <div class="conhecimentosSobre">Utilizado algumas vezes, ainda requer bom aprimoramento</div>
+                    <div id="conhecimento" class="conhecimentosSobre">Utilizado em diversos exercícios do curso da udemy, inclusive no projeto flappy bird, do próprio curso, feito com 
+                        intuito de treinar js em conjunto com html e css
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 conhecimentosInvisivel">
-                </div>
+
                 <div class="col-sm-12 col-md-6 col-lg-4 item">
                     <img src="img/logos/mysql-logo.png" alt="">
                     <div class="tituloItem">mySql</div>
-                    <div class="conhecimentosSobre">Utilizado nas aulas da etec, conhecimentos também em triggers, procedures
+                    <div id="conhecimento" class="conhecimentosSobre">Utilizado nas aulas da etec, conhecimentos também em triggers, procedures
                     </div>
                 </div>
+
             </div>
+            <div class="conhecimentos-botoes">
+                <button id="showC" onclick="showAll()" class="con-botao conhecimentos-show">Mostrar tudo</button>
+                <button id="hideC" onclick="hideAll()" class="con-botao conhecimentos-hide">Esconder</button>
+            </div>  
         </div>
     </section>
-    <!--================CONHECIMENTOS================-->
 
-
-    <!--================PROJETOS================-->
     <section id="projetos" class="projetos proj1">
 
         <div class="tituloProjetos wow fadeInDown">Meus Projetos</div>
@@ -231,10 +227,7 @@
             </div>
         </div>
     </section>
-    <!--================PROJETOS================-->
 
-
-    <!--================CURSOS================-->
     <section id="cursos" class="cursos">
         <div class="container wow fadeInDown">
             <div class="cursosTitulo">Cursos</div>
@@ -267,12 +260,10 @@
             </div>
         </div>
     </section>
-    <!--================CURSOS================-->
 
-    <!--================REPOSITORIOS================-->
     <section id="repositorios" class="repositorios">
         <div class="container">
-            <div class="repositoriosTitulo">Repositórios</div>
+            <div class="repositoriosTitulo">Repositórios Principais</div>
             <div class="item primeiroItem">
                 <div class="repositorioNome">Pokedex</div>
                 <div class="repositorioSobre">Consumo de Api com JS</div>
@@ -287,9 +278,9 @@
                 </a>
             </div>
             <div class="item quartoItem">
-                <div class="repositorioNome">Project Lo Fi</div>
-                <div class="repositorioSobre">Site inicial</div>
-                <a class="repositorioLink" target="blank" href="https://github.com/wRiqie/Lo-fi_web"><button
+                <div class="repositorioNome">Flappy Bird</div>
+                <div class="repositorioSobre">Exercício de DOM</div>
+                <a class="repositorioLink" target="blank" href="https://github.com/wRiqie/Flappy-Bird"><button
                         class="repositorioBotao">Github <i class="fab fa-github"></i></button></a></button>
                 </a>
             </div>
@@ -316,7 +307,6 @@
             </div>
         </div>
     </section>
-    <!--================REPOSITORIOS================-->
 
     <section id="contatos" class="contatos">
         <div class="contatosTitulo">Contatos</div>
@@ -357,7 +347,6 @@
 
 
     <script src="https://kit.fontawesome.com/08b906bbdc.js"></script>
-    <script src="js/bootstrap.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/mobile.js"></script>
     <script src="js/wow.min.js"></script>
