@@ -392,10 +392,6 @@ header.sticky {
   transition: 0.8s;
 }
 
-.conhecimentos .item:hover .tituloItem {
-  border-bottom: 1px solid #1d97e9;
-}
-
 .conhecimentos .item:hover img {
   -webkit-filter: none;
           filter: none;
