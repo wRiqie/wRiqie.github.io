@@ -486,10 +486,11 @@ header.sticky {
     align-items: center;
     height: 250px;
     border-radius: 5px;
+    transition: 0.5s ease;
 }
 
 .cursos .item:hover{
-
+    background: rgb(177, 218, 253);
 }
 
 .cursos .cursosIcone{

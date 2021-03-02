@@ -513,6 +513,12 @@ header.sticky {
           align-items: center;
   height: 250px;
   border-radius: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.cursos .item:hover {
+  background: #b1dafd;
 }
 
 .cursos .cursosIcone {
