@@ -1,8 +1,12 @@
+/*Variaveis*/
+$PrimaryColor: rgb(81, 42, 179);
+/*Variaveis*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 html{
@@ -15,6 +19,10 @@ body{
 }
 
 /*MOBILE AREA*/
+.fas{
+    margin-right: 5px;
+}
+
 .page-wrap:before{
     transition: .3s all ease-in-out;
     background: rgba(0, 0, 0, 0.6);
@@ -98,7 +106,8 @@ body{
 }
  
 .mobile-view .clone-view a{
-    padding: 10px 20px;
+    margin-top: 5px;
+    padding: 10px 15px;
     display: block;
     position: relative;
     color: black;
@@ -140,7 +149,7 @@ header.sticky {
 }
 
 #header .container .logo a span{
-    color: rgb(29, 151, 233);
+    color: $PrimaryColor;
 }
 
 #header .container .logo a{
@@ -148,18 +157,44 @@ header.sticky {
     color: rgb(255, 255, 255);
     font-weight: bold;
     letter-spacing: 2px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .navigation ul{
     list-style: none;
 }
 
+.Sublinhado{
+    ::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width .3s; 
+     }
+ 
+     :hover::after{
+         width: 100%;
+         transition: width .3s;
+     }
+}
+
+.acionado {
+    ::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+     }
+}
+
 .navigation ul li a{
     color: white;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
     padding: 10px;
 }
 
@@ -173,13 +208,13 @@ header.sticky {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url(../img/background.jpg) center center no-repeat fixed;
+    background: url(../img/background3.jpg) center center no-repeat fixed;
     background-size: cover;
 }
 
 .fundo::before{
     content: "";
-    background: rgba(26, 34, 61, 0.836);
+    background: rgba(0, 0, 0, 0.646);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -214,7 +249,7 @@ header.sticky {
 }
 
 .text3 .azul{
-    color:rgb(29, 151, 233);
+    color:rgb(100, 59, 202);
 }
 
 .text3 .nick{
@@ -230,7 +265,7 @@ header.sticky {
 .sobre .titulo{
     font-size: 50px;
     font-weight: 600;
-    color: rgb(23, 128, 199);
+    color: $PrimaryColor;
 }
 
 .sobre .corpoDoTexto{
@@ -258,8 +293,8 @@ header.sticky {
 .botaoCurriculo a button{
     padding: 15px;
 
-    background: rgb(23, 128, 199);
-    border: 2px solid rgb(23, 128, 199);
+    background: $PrimaryColor;
+    border: 2px solid $PrimaryColor;
     outline: none;
     color: white;
     font-weight: 600;
@@ -271,13 +306,13 @@ header.sticky {
 
 .botaoCurriculo a button:hover{
     background: none;
-    color: rgb(23, 128, 199);
-    border: 2px solid rgb(23, 128, 199);
+    color: $PrimaryColor;
+    border: 2px solid $PrimaryColor;
 }
 
 .conhecimentos{
     padding: 0 0 150px 0;
-    background-color: rgb(15, 117, 185);
+    background-color: $PrimaryColor;
     color: black;
     
 }
@@ -362,7 +397,7 @@ header.sticky {
 .conhecimentos .item{
     padding:40px;
     background-color: white;
-    border: 3px solid rgb(15, 117, 185);
+    border: 3px solid $PrimaryColor;
     border-radius: 5px; 
     display: flex;
     flex-direction: column;
@@ -412,6 +447,74 @@ header.sticky {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*::before{
+        content: '';
+        background: rgba(0, 0, 0, 0.204);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 0px;
+     }
+
+     :hover::before{
+        height: 200px;
+     }*/
+}
+
+.image{
+    position: relative;
+}
+
+.image img{
+    display: block;
+    width: 100%;
+}
+
+.imageOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.imageOverlayBlur{
+    backdrop-filter: blur(5px);
+}
+
+.imageOverlay > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.imageOverlay:hover{
+    opacity: 1;
+}
+
+.imageOverlay:hover > *{
+    transform: translateY(0)
+}
+
+.imageTitle{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.imageDescription{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25em;
 }
 
 .projetos .mostrar img{
@@ -420,10 +523,6 @@ header.sticky {
     margin: 0;
     transition: 0.5s;
     border-radius: 5px;
-}
-
-.projetos .mostrar img:hover{
-    filter: grayscale(60%);
 }
 
 .projetos .mostrar .nomeProjeto{
@@ -437,8 +536,13 @@ header.sticky {
     display: none;
 }
 
+a{
+    color: $PrimaryColor;
+}
+
 .cliqueGit{
     font-weight: 600;
+    color: $PrimaryColor;
 }
 
 .botaoProjeto a button{
@@ -446,9 +550,9 @@ header.sticky {
     margin-top: 3px;
 
     background: none;
-    border: 2px solid rgb(23, 128, 199);
+    border: 2px solid $PrimaryColor;
     outline: none;
-    color: rgb(23, 128, 199);
+    color: $PrimaryColor;
     font-weight: 600;
 
     border-radius: 5px;
@@ -463,7 +567,7 @@ header.sticky {
 .cursos{
     padding: 0 0 150px 0;
 
-    background-color: rgb(15, 117, 185);
+    background-color: $PrimaryColor;
 }
 
 .cursos .cursosTitulo{
@@ -490,13 +594,14 @@ header.sticky {
 }
 
 .cursos .item:hover{
-    background: rgb(177, 218, 253);
+    background: rgb(205, 182, 235);
+    transform: rotate(15deg);
 }
 
 .cursos .cursosIcone{
     font-size: 60px;
 
-    color: rgb(15, 117, 185);
+    color: $PrimaryColor;
 }
 
 .cursos .cursosNome{
@@ -588,7 +693,7 @@ header.sticky {
     padding: 5px;
 
     background: none;
-    border: 2px solid rgb(23, 128, 199);
+    border: 2px solid $PrimaryColor;
     outline: none;
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -692,7 +797,7 @@ footer{
 }
 
 footer .rodape .textFooter span{
-    color: rgb(29, 151, 233);
+    color: $PrimaryColor;
     font-size: 18px;
     font-weight: 500;
 }

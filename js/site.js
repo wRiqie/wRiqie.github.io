@@ -5,8 +5,15 @@ window.addEventListener("scroll", function () {
 
 function toggle() {
     var header = document.getElementById('header');
-    header.classList.toggle('active')
+    header.classList.toggle('active');
 }
+
+$(document).ready(function () {
+    $('.nav-link').click(function () {
+        $('.MenuItens').find('li.acionado').removeClass('acionado');
+        $(this).parents(".nav-item").addClass('acionado');
+    });
+});
 
 function showAll() {
     const conhecimento = document.querySelectorAll('#conhecimento')

@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="img/iconPage.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -44,26 +46,26 @@
                         <li class="d-lg-none d-block nav-item bar navAparecer">
                             <div class=""><i class="fas fa-bars js-toggle"></i></div>
                         </li>
-                        <ul class="d-none d-lg-flex nav js-clone-nav">
-                            <li class="nav-item bar navSumir">
+                        <ul class="d-none d-lg-flex nav js-clone-nav MenuItens">
+                            <li class="Sublinhado nav-item bar navSumir">
                                 <a class="nav-link" href="#inicio">Início</a>
                             </li>
-                            <li class="nav-item bar navSumir">
+                            <li class="Sublinhado nav-item bar navSumir">
                                 <a class="nav-link" href="#sobre">Sobre Mim</a>
                             </li>
-                            <li class="nav-item bar navSumir">
+                            <li class="Sublinhado nav-item bar navSumir">
                                 <a class="nav-link" href="#conhecimentos">Conhecimentos</a>
                             </li>
-                            <li class="nav-item bar navSumir">
+                            <li class="Sublinhado nav-item bar navSumir">
                                 <a class="nav-link" href="#projetos">Projetos</a>
                             </li>
-                            <li class="nav-item bar navSumir">
+                            <li class="Sublinhado nav-item bar navSumir">
                                 <a class="nav-link" href="#cursos">Cursos</a>
                             </li>
-                            <li class="nav-item bar navSumir">
+                            <li class="Sublinhado nav-item bar navSumir">
                                 <a class="nav-link" href="#repositorios">Repositórios</a>
                             </li>
-                            <li class="nav-item bar navSumir">
+                            <li class="Sublinhado nav-item bar navSumir">
                                 <a class="nav-link" href="#contatos">Contatos</a>
                             </li>
                         </ul>
@@ -168,10 +170,20 @@
 
         <div class="tituloProjetos wow fadeInDown">Meus Projetos</div>
         <div class="container">
-            <div class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-carousel owl-theme owl-loaded wow fadeInDown">
                 <div class="item">
                     <div class="mostrar">
-                        <a class="venobox" data-vbtype="iframe" href="img/pic1.png"><img src="img/pic1.png" alt=""></a>
+                        <a class="venobox_custom" href="img/pic1.png">
+                            <div class="image">
+                                <img src="img/pic1.png" alt="">
+                                <div class="imageOverlay imageOverlayBlur">
+                                    <div class="imageTitle">Clique</div>
+                                    <p class="imageDescription">
+                                        Para dar uma olhada
+                                    </p>
+                                </div>
+                            </div> 
+                        </a>
                         <span class="nomeProjeto">MasterGames</span>
                         <div class="textoProjeto">Projeto final de web design FDevs</div>
                         <div class="cliqueGit"><a target="blank" href="https://github.com/wRiqie/Site-de-Games">Ver no github</a></div>
@@ -179,7 +191,17 @@
                 </div>
                 <div class="item">
                     <div class="mostrar">
-                        <a class="venobox" data-vbtype="iframe" href="img/pic2.png"><img src="img/pic2.png" alt=""></a>
+                        <a class="venobox_custom" href="img/pic2.png">
+                            <div class="image">
+                                <img src="img/pic2.png" alt="">
+                                <div class="imageOverlay imageOverlayBlur">
+                                    <div class="imageTitle">Clique</div>
+                                    <p class="imageDescription">
+                                        Para dar uma olhada
+                                    </p>
+                                </div>
+                            </div> 
+                        </a>
                         <span class="nomeProjeto">MyHeal</span>
                         <div class="textoProjeto">TCC da etec, app com capacidade de fazer crud, login, registro, adicionar produtos no banco de dados e adicionar itens no carrinho.
                         </div>
@@ -188,7 +210,17 @@
                 </div>
                 <div class="item">
                     <div class="mostrar">
-                        <a class="venobox" data-vbtype="iframe" href="img/pic3.png"><img src="img/pic3.png" alt=""></a>
+                        <a class="venobox_custom" href="img/pic3.png">
+                            <div class="image">
+                                <img src="img/pic3.png" alt="">
+                                <div class="imageOverlay imageOverlayBlur">
+                                    <div class="imageTitle">Clique</div>
+                                    <p class="imageDescription">
+                                        Para dar uma olhada
+                                    </p>
+                                </div>
+                            </div> 
+                        </a>
                         <span class="nomeProjeto">Project Lo-fi</span>
                         <div class="textoProjeto">Primeiro projeto, feito apenas com o intuito de explorar algumas possibilidade do html e css</div>
                         <div class="cliqueGit"><a target="blank" href="https://github.com/wRiqie/Lo-fi_web">Ver no github</a></div>
@@ -406,8 +438,12 @@
         $(document).ready(function() {
 
             $('.venobox').venobox();
-
-
+            $('.venobox_custom').venobox({
+            framewidth : '',
+            frameheight: '',
+            spinner : 'cube-grid',
+            overlayColor : 'rgba(81, 42, 179, 0.517)'
+            });
         });
     </script>
     <script src="js/site.js"></script>

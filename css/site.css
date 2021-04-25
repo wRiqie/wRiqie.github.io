@@ -1,9 +1,11 @@
+/*Variaveis*/
+/*Variaveis*/
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 html {
@@ -16,6 +18,10 @@ body {
 }
 
 /*MOBILE AREA*/
+.fas {
+  margin-right: 5px;
+}
+
 .page-wrap:before {
   -webkit-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
@@ -105,7 +111,8 @@ body {
 }
 
 .mobile-view .clone-view a {
-  padding: 10px 20px;
+  margin-top: 5px;
+  padding: 10px 15px;
   display: block;
   position: relative;
   color: black;
@@ -156,7 +163,7 @@ header.sticky {
 }
 
 #header .container .logo a span {
-  color: #1d97e9;
+  color: #512ab3;
 }
 
 #header .container .logo a {
@@ -164,18 +171,42 @@ header.sticky {
   color: white;
   font-weight: bold;
   letter-spacing: 2px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .navigation ul {
   list-style: none;
 }
 
+.Sublinhado ::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.Sublinhado :hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.acionado ::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
 .navigation ul li a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
   padding: 10px;
 }
 
@@ -189,13 +220,13 @@ header.sticky {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: url(../img/background.jpg) center center no-repeat fixed;
+  background: url(../img/background3.jpg) center center no-repeat fixed;
   background-size: cover;
 }
 
 .fundo::before {
   content: "";
-  background: rgba(26, 34, 61, 0.836);
+  background: rgba(0, 0, 0, 0.646);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -230,7 +261,7 @@ header.sticky {
 }
 
 .text3 .azul {
-  color: #1d97e9;
+  color: #643bca;
 }
 
 .text3 .nick {
@@ -250,7 +281,7 @@ header.sticky {
 .sobre .titulo {
   font-size: 50px;
   font-weight: 600;
-  color: #1780c7;
+  color: #512ab3;
 }
 
 .sobre .corpoDoTexto {
@@ -282,8 +313,8 @@ header.sticky {
 
 .botaoCurriculo a button {
   padding: 15px;
-  background: #1780c7;
-  border: 2px solid #1780c7;
+  background: #512ab3;
+  border: 2px solid #512ab3;
   outline: none;
   color: white;
   font-weight: 600;
@@ -295,13 +326,13 @@ header.sticky {
 
 .botaoCurriculo a button:hover {
   background: none;
-  color: #1780c7;
-  border: 2px solid #1780c7;
+  color: #512ab3;
+  border: 2px solid #512ab3;
 }
 
 .conhecimentos {
   padding: 0 0 150px 0;
-  background-color: #0f75b9;
+  background-color: #512ab3;
   color: black;
 }
 
@@ -370,7 +401,7 @@ header.sticky {
 .conhecimentos .item {
   padding: 40px;
   background-color: white;
-  border: 3px solid #0f75b9;
+  border: 3px solid #512ab3;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,6 +466,90 @@ header.sticky {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*::before{
+        content: '';
+        background: rgba(0, 0, 0, 0.204);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 0px;
+     }
+
+     :hover::before{
+        height: 200px;
+     }*/
+}
+
+.image {
+  position: relative;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.imageOverlayBlur {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.imageOverlay > * {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.imageOverlay:hover {
+  opacity: 1;
+}
+
+.imageOverlay:hover > * {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.imageTitle {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.imageDescription {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25em;
 }
 
 .projetos .mostrar img {
@@ -444,11 +559,6 @@ header.sticky {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 5px;
-}
-
-.projetos .mostrar img:hover {
-  -webkit-filter: grayscale(60%);
-          filter: grayscale(60%);
 }
 
 .projetos .mostrar .nomeProjeto {
@@ -461,17 +571,22 @@ header.sticky {
   display: none;
 }
 
+a {
+  color: #512ab3;
+}
+
 .cliqueGit {
   font-weight: 600;
+  color: #512ab3;
 }
 
 .botaoProjeto a button {
   padding: 10px;
   margin-top: 3px;
   background: none;
-  border: 2px solid #1780c7;
+  border: 2px solid #512ab3;
   outline: none;
-  color: #1780c7;
+  color: #512ab3;
   font-weight: 600;
   border-radius: 5px;
   -webkit-transition: 0.3s;
@@ -485,7 +600,7 @@ header.sticky {
 
 .cursos {
   padding: 0 0 150px 0;
-  background-color: #0f75b9;
+  background-color: #512ab3;
 }
 
 .cursos .cursosTitulo {
@@ -518,12 +633,14 @@ header.sticky {
 }
 
 .cursos .item:hover {
-  background: #b1dafd;
+  background: #cdb6eb;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
 }
 
 .cursos .cursosIcone {
   font-size: 60px;
-  color: #0f75b9;
+  color: #512ab3;
 }
 
 .cursos .cursosNome {
@@ -615,7 +732,7 @@ header.sticky {
 .repositorios .item .repositorioLink button {
   padding: 5px;
   background: none;
-  border: 2px solid #1780c7;
+  border: 2px solid #512ab3;
   outline: none;
   color: white;
   font-weight: 500;
@@ -713,7 +830,7 @@ footer {
 }
 
 footer .rodape .textFooter span {
-  color: #1d97e9;
+  color: #512ab3;
   font-size: 18px;
   font-weight: 500;
 }

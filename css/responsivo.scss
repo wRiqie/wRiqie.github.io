@@ -1,5 +1,4 @@
 @media(max-width: 1000px){
-
     .conhecimentosTitulo{
         font-size: 30px;
         padding: 80px 0;
@@ -46,15 +45,7 @@
     }
 
     #header .container .logo a{
-        font-size: 25px;
-    }
-
-    .navSumir{
-        
-    }
-
-    .navAparecer{
-       
+        font-size: 18px;
     }
 
     .sobre .imagem img{
@@ -64,6 +55,10 @@
 
     .sobre .titulo{
         font-size: 40px;
+    }
+
+    .conhecimentos .item{
+        margin: 20px;
     }
 
     .conhecimentos .item img{
@@ -140,6 +135,10 @@
         position: static;
     }
 
+    .cursos .item:hover{
+        background: white;
+        transform: rotate(0deg);
+    }
 }
 
 @media(max-width: 765px){
