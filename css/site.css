@@ -17,6 +17,10 @@ body {
   width: 100%;
 }
 
+.TextPrimary {
+  color: #512ab3;
+}
+
 /*MOBILE AREA*/
 .fas {
   margin-right: 5px;
@@ -246,18 +250,21 @@ header.sticky {
 .text1 {
   color: white;
   font-size: 40px;
+  cursor: pointer;
 }
 
 .text2 {
   color: white;
   font-size: 65px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .text3 {
   color: white;
   font-size: 30px;
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .text3 .azul {
@@ -319,8 +326,8 @@ header.sticky {
   color: white;
   font-weight: 600;
   border-radius: 5px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
   font-size: 18px;
 }
 
@@ -790,23 +797,37 @@ a {
 }
 
 .contatos .whatsButton button {
-  padding: 5px 10px;
+  padding: 3px 8px;
   color: white;
   background-color: #34af23;
   font-weight: 500;
-  border: none;
+  border: 2px solid #34af23;
   border-radius: 3px;
   outline: none;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.contatos .whatsButton button:hover {
+  background-color: white;
+  color: #34af23;
 }
 
 .contatos .linkButton button {
-  padding: 5px 10px;
+  padding: 3px 8px;
   color: white;
   background-color: #0976b4;
   font-weight: 500;
-  border: none;
+  border: 2px solid #0976b4;
   border-radius: 3px;
   outline: none;
+  -webkit-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.contatos .linkButton button:hover {
+  background-color: white;
+  color: #0976b4;
 }
 
 .bord {

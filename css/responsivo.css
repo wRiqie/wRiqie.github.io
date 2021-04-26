@@ -47,9 +47,6 @@
   .sobre .titulo {
     font-size: 40px;
   }
-  .conhecimentos .item {
-    margin: 20px;
-  }
   .conhecimentos .item img {
     -webkit-filter: none;
             filter: none;
@@ -122,6 +119,9 @@
   .bord {
     border-top: 1px solid #cacaca;
     border-bottom: 1px solid #cacaca;
+  }
+  .conhecimentos .item {
+    margin: 20px;
   }
 }
 

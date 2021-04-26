@@ -57,10 +57,6 @@
         font-size: 40px;
     }
 
-    .conhecimentos .item{
-        margin: 20px;
-    }
-
     .conhecimentos .item img{
         filter: none;
     }
@@ -145,6 +141,10 @@
     .bord{
         border-top: 1px solid rgb(202, 202, 202);
         border-bottom: 1px solid rgb(202, 202, 202);
+    }
+
+    .conhecimentos .item{
+        margin: 20px;
     }
 }
 
