@@ -224,13 +224,13 @@ header.sticky {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: url(../img/background3.jpg) center center no-repeat fixed;
+  background: url(../img/background.jpg) center center no-repeat fixed;
   background-size: cover;
 }
 
 .fundo::before {
   content: "";
-  background: rgba(0, 0, 0, 0.646);
+  background: rgba(0, 0, 0, 0.651);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -355,11 +355,14 @@ header.sticky {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: bold;
 }
 
 .conhecimentos .conhecimentos-botoes a {
   color: black;
   cursor: pointer;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .conhecimentos .con-botao {
@@ -831,30 +834,84 @@ a {
   border-right: 1px solid #cacaca;
 }
 
-footer {
-  width: 100%;
-  height: 50px;
-  background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+/*  footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-footer .rodape .textFooter span {
-  color: #512ab3;
-  font-size: 18px;
-  font-weight: 500;
-}
-
+footer .rodape .textFooter span{
+    color: $PrimaryColor;
+    font-size: 18px;
+    font-weight: 500;
+}*/
 footer .rodape .textFooter {
   color: white;
   font-size: 18px;
   font-weight: 500;
+}
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: black;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #4b4c4d;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  color: #cfcfcf;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=site.css.map */
