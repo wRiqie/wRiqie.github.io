@@ -43,6 +43,6 @@ new WOW().init();
             framewidth : '',
             frameheight: '',
             spinner : 'cube-grid',
-            overlayColor : 'rgba(0, 0, 0, 0.750)'
+            overlayColor : 'rgba(0, 0, 0, 0.750 )'
             });
         });
