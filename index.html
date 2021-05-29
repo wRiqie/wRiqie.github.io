@@ -24,9 +24,11 @@
 
 </head>
 
-<body>
+<body onload="myFunction()">
 
-    <div class="page-wrap">
+    <div id="load" class="load"></div>
+
+    <div class="page-wrap page">
 
         <div class="mobile-view">
             <div class="mobile-view-header">
@@ -76,7 +78,7 @@
 
     </div>
 
-    <section id="inicio" class="fundo">
+    <section id="inicio" class="fundo page">
         <div class="max">
             <div class="text1">Olá, eu sou</div>
             <div class="text2">Henrique Moisés Fernandes</div>
@@ -84,7 +86,7 @@
         </div>
     </section>
 
-    <section id="sobre" class="sobre">
+    <section id="sobre" class="sobre page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -105,7 +107,7 @@
         </div>
     </section>
 
-    <section id="conhecimentos" class="conhecimentos">
+    <section id="conhecimentos" class="conhecimentos page">
         <div class="conhecimentosTitulo"><span>Conhecimentos</span></div>
         <div class="container">
             <div class="row">
@@ -166,7 +168,7 @@
         </div>
     </section>
 
-    <section id="projetos" class="projetos proj1">
+    <section id="projetos" class="projetos proj1 page">
 
         <div class="tituloProjetos wow fadeInDown">Meus Projetos</div>
         <div class="container">
@@ -230,44 +232,7 @@
         </div>
     </section>
 
-    <section id="projetos" class="projetos proj2">
-
-        <div class="tituloProjetos wow fadeInDown">Meus Projetos</div>
-        <div class="container">
-            <div class="owl-carousel owl-theme owl-loaded">
-                <div class="item">
-                    <div class="mostrar">
-                        <img src="img/pic1.png" alt="">
-                        <span class="nomeProjeto">MasterGames</span>
-                        <div class="textoProjeto">Projeto final de web design FDevs</div>
-                        <div class="botaoProjeto"><a target="blank" href="https://github.com/wRiqie/Site-de-Games"><button>Ver no
-                                    github<i class="fab fa-github iconeProjeto"></i></button></a></div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="mostrar">
-                        <img src="img/pic2.png" alt="">
-                        <span class="nomeProjeto">MyHeal</span>
-                        <div class="textoProjeto">TCC da etec, app com capacidade de fazer crud, login, registro, adicionar produtos no banco de dados e adicionar itens no carrinho.
-                        </div>
-                        <div class="botaoProjeto"><a target="blank" href="https://github.com/wRiqie/MyHeal"><button>Ver no github<i
-                                        class="fab fa-github iconeProjeto"></i></button></a></div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="mostrar">
-                        <img src="img/pic3.png" alt="">
-                        <span class="nomeProjeto">Project Lo-fi</span>
-                        <div class="textoProjeto">Primeiro projeto, feito apenas com o intuito de explorar algumas possibilidade do html e css</div>
-                        <div class="botaoProjeto"><a target="blank" href="https://github.com/wRiqie/Lo-fi_web"><button>Ver no github<i
-                                        class="fab fa-github iconeProjeto"></i></button></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="cursos" class="cursos">
+    <section id="cursos" class="cursos page">
         <div class="container wow fadeInDown">
             <div class="cursosTitulo">Cursos</div>
             <div class="owl-carousel owl-theme owl-loaded">
@@ -305,7 +270,7 @@
         </div>
     </section>
 
-    <section id="repositorios" class="repositorios">
+    <section id="repositorios" class="repositorios page">
         <div class="container">
             <div class="repositoriosTitulo">Repositórios Principais</div>
             <div class="item primeiroItem">
@@ -352,7 +317,7 @@
         </div>
     </section>
 
-    <section id="contatos" class="contatos">
+    <section id="contatos" class="contatos page">
         <div class="contatosTitulo">Contatos</div>
 
         <div class="container">
@@ -382,7 +347,7 @@
 
     </section>
     
-    <div class="footer-basic">
+    <div class="footer-basic page">
         <footer>
             <div class="social">
                 <a target="_blank" href="https://www.instagram.com/wriqie/">

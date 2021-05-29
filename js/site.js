@@ -49,3 +49,17 @@ function hideAll() {
     showC.style.display = 'block'
     hideC.style.display = 'none'
 }
+
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000); // aumentei o tempo para ilustração
+}
+
+function showPage() {
+   document.getElementById("load").style.display = "none";
+   var a = document.querySelectorAll(".page");
+   a.forEach(e => {
+       e.style.display = "block"
+   });
+}
