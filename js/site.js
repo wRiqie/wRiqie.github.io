@@ -53,7 +53,7 @@ function hideAll() {
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 3000); // aumentei o tempo para ilustração
+    myVar = setTimeout(showPage, 0); // aumentei o tempo para ilustração
 }
 
 function showPage() {
