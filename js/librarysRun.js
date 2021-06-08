@@ -36,13 +36,9 @@ new WOW().init();
 
         })
 
-        $(document).ready(function() {
-
-            $('.venobox').venobox();
-            $('.venobox_custom').venobox({
-            framewidth : '',
-            frameheight: '',
-            spinner : 'cube-grid',
-            overlayColor : 'rgba(0, 0, 0, 0.750 )'
-            });
+        $('.venobox_custom').venobox({                       
+            titleattr  : 'data-title',                       
+            infinigall : true,
+            spinner    : 'cube-grid',
+            arrowsColor: '#512ab3'
         });

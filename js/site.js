@@ -50,7 +50,7 @@ function hideAll() {
     hideC.style.display = 'none'
 }
 
-var myVar;
+/*var myVar;
 
 function myFunction() {
     myVar = setTimeout(showPage, 0); // aumentei o tempo para ilustração
@@ -62,4 +62,4 @@ function showPage() {
    a.forEach(e => {
        e.style.display = "block"
    });
-}
+}*/

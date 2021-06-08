@@ -10,7 +10,6 @@ $PrimaryColor: rgb(81, 42, 179);
 }
 
 .page{
-    display: none;
 }
 
 .load{
@@ -241,36 +240,29 @@ header.sticky {
 }
 
 .fundo .max{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
-    top: 40vh;
-    left: 0;
-    right: 0;
-    max-width: 1300px;
-    margin: 0 auto;
+    left: 5%;
 }
 
 .text1{
     color: white;
     font-size: 40px;
-    cursor: pointer;
 }
 
 .text2{
     color: white;
     font-size: 65px;
     font-weight: 600;
-    cursor: pointer;
 }
 
 .text3{
     color: white;
     font-size: 30px;
     padding-top: 10px;
-    cursor: pointer;
-}
-
-.text3 .azul{
-    color:rgb(255, 255, 255);
 }
 
 .sobre{
@@ -627,6 +619,10 @@ a{
     letter-spacing: 2px;
 }
 
+.repositorios .repositoriosItems{
+    margin: 0 10px;
+}
+
 .repositorios .item{
     padding: 50px;
     display: flex;
@@ -649,6 +645,7 @@ a{
 .primeiroItem{
     background-image: url(../img/pokemon.png);
     background-size: cover;
+    border-radius: 7px 7px 0 0;
 }
 
 .segundoItem{
@@ -676,6 +673,7 @@ a{
 .sextoItem{
     background-image: url(../img/myheal.png);
     background-size: cover;
+    border-radius: 0 0 7px 7px;
 }
 
 .repositorios .item .repositorioLink{
