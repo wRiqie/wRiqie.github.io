@@ -1,0 +1,23 @@
+{
+    "portfolio": "Portfólio",
+    "home": "Início",
+    "hello": "Olá 👋 Eu sou Henrique",
+    "aboutCaption": "Tenho experiência de 2 anos e meio na área de desenvolvimento mobile, me dediquei ao flutter nos últimos 2 anos e atualmente venho focando em aprender também android nativo.",
+    "resume": "Currículo",
+    "mainTechs": "Principais Tecnologias",
+    "workExperience": "Experiência Profissional",
+    "mobileDeveloper": "Desenvolvedor Mobile",
+    "responsabilityForVariousApps": "Responsabilidade sobre diversos apps flutter.",
+    "responsabilityForRefactors": "Responsável por refatorações, correções e melhorias.",
+    "helpingSomeDevelopers": "Auxiliando alguns desenvolvedores com flutter.",
+    "lastExpDescription": "A partir desse ponto, não apenas aprimorei aplicativos, corrigi bugs, mas também comecei a auxiliar outros desenvolvedores a compreender o funcionamento e a lógica dos aplicativos desenvolvidos internamente na empresa, compartilhando técnicas e conhecimentos.",
+    "startedSolvingComplexProblems": "Comecei a resolver problemas mais complexos.",
+    "iAddedVariousNewFuncionalities": "Adicionei várias novas funcionalidades a apps já existentes.",
+    "usedFlutterToDevelopingApp": "Utilizei o flutter para desenvolver duas aplicações do zero à publicação.",
+    "secondExpDescription": "A partir desse ponto comecei a enfrentar desafios mais complexos. Após alguns meses, tive meu primeiro contato com o Flutter e, a partir desse ponto, continuei a aprofundar meu conhecimento nessa tecnologia. Com o tempo, assumi a responsabilidade, em colaboração com um colega, de desenvolver um aplicativo do zero, desde o estágio inicial até a publicação. Posteriormente, tive também a oportunidade de programar outro aplicativo mais complexo do zero ao deploy.",
+    "mobileDeveloperIntern": "Desenvolvedor Mobile Estagiário",
+    "colaboratedInSolvingBugs": "Colaborei na resolução de bugs e adicionei novas funcionalidades à aplicações já existentes.",
+    "usedScrumMethodology": "Utilizando a metodologia ágil Scrum, apontei minhas tarefas e desenvolvimentos.",
+    "firstExpDescription": "Como programador mobile estagiário, eu aprendi vários fundamentos importantes da programação. Durante esse tempo, utilizei C# com Xamarin Forms, realizei pequenas melhorias em uma API com .Net Core, e realizei consultas em um banco de dados SQL Server.",
+    "projects": "Projetos principais"
+}

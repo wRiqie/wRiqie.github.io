@@ -1,0 +1,23 @@
+{
+    "portfolio": "Portfolio",
+    "home": "Home",
+    "hello": "Hello 👋 i'm Henrique",
+    "aboutCaption": "I have 2 and a half years' experience in mobile development, I've been working on flutter for the last 2 years and I'm currently focusing on learning native android.",
+    "resume": "Resume",
+    "mainTechs": "Main Technologies",
+    "workExperience": "Work Experience",
+    "mobileDeveloper": "Mobile Developer",
+    "responsabilityForVariousApps": "Responsability for various flutter apps",
+    "responsabilityForRefactors": "Responsible for refactorings, corrections and improvements",
+    "helpingSomeDevelopers": "Helping some developers with flutter.",
+    "lastExpDescription": "From that point on, I not only improved applications, fixed bugs, but also began to help other developers understand the workings and logic of the applications developed internally at the company, sharing techniques and knowledge.",
+    "startedSolvingComplexProblems": "I started solving more complex problems.",
+    "iAddedVariousNewFuncionalities": "I've added several new features to existing apps.",
+    "usedFlutterToDevelopingApp": "I used flutter to develop two applications from scratch to publication.",
+    "secondExpDescription": "From that point on, I began to face more complex challenges. After a few months, I had my first contact with Flutter and, from that point on, I continued to deepen my knowledge of this technology. Over time, I took on the responsibility, in collaboration with a colleague, of developing an application from scratch, from the initial stage to publication. Later, I also had the opportunity to program another more complex application from scratch to deployment.",
+    "mobileDeveloperIntern": "Mobile Developer Intern",
+    "colaboratedInSolvingBugs": "I collaborated in solving bugs and adding new features to existing applications.",
+    "usedScrumMethodology": "Using the agile Scrum methodology, I outlined my tasks and developments.",
+    "firstExpDescription": "As a trainee mobile programmer, I learned many important programming fundamentals. During this time, I used C# with Xamarin Forms, made small improvements to an API with .Net Core, and performed queries on a SQL Server database.",
+    "projects": "Main projects"
+}
